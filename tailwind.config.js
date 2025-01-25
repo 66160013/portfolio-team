@@ -1,0 +1,8 @@
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  // ส่วนขยายธีมเพิ่มเติมจะอยู ่ที ่นี ่
+  plugins: [],
+};
