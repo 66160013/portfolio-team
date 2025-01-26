@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ez">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects Section</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: rgb(194, 200, 247);
+    }
+    .section {
+      padding: 24px;
+    }
+    .section h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 24px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+    @media (min-width: 640px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      background-color: rgb(255, 255, 255);
+    }
+    .card img {
+      width: 100%;
+      height: 192px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 16px;
+    }
+    .card-content h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .card-content p {
+      margin-bottom: 16px;
+      color: #555;
+    }
+    .links {
+      display: flex;
+      justify-content: space-between;
+    }
+    .links a {
+      color: #1d4ed8;
+      text-decoration: none;
+    }
+    .links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <section class="section">
+    <h2>ผลงานการแสดง</h2>
+    <div class="grid">
+      <div class="card">
+        <img src="https://i.redd.it/mf614hti1r9b1.jpg" alt="Project One">
+        <div class="card-content">
+          <h3>Iron Man</h3>
+          <p>ไอรอนแมน มหาประลัยคนเกราะเหล็ก (อังกฤษ: Iron Man) เป็นภาพยนตร์อเมริกันแนวซูเปอร์ฮีโร 
+            ฉายเมื่อ ค.ศ. 2008 สร้างจากตัวละครชื่อเดียวกันของมาร์เวลคอมิกส์ ภาพยนตร์สร้างโดย มาร์เวลสตูดิโอส์ 
+            และจัดจำหน่ายโดย พาราเมาต์พิกเจอส์</p>
+          <p><strong>หมวดหมู่หนัง:</strong> ภาพยนตร์แอ็คชั่น</p>
+          <div class="links">
+            <a href="https://www.hotstar.com/th/onboarding?gclid=Cj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB&utm_campaign=MK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na&utm_medium=search&utm_source=google&ref=%2Fth%3Futm_source%3Dgoogle%26utm_medium%3Dsearch%26utm_campaign%3DMK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na%26gad_source%3D1%26gclid%3DCj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB" target="_blank">รับชมได้ที่ Disney plus</a>
+            <a href="https://en.wikipedia.org/wiki/Iron_Man_(2008_film)" target="_blank">รายละเอียด</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://s.isanook.com/mv/0/ud/18/92201/ddl_digitalonesheet_intlmain_.jpg?ip/resize/w728/q80/jpg" alt="Project Two">
+        <div class="card-content">
+          <h3>Dolittle</h3>
+          <p>
+            Dolittle เป็นภาพยนตร์ผจญภัยแฟนตาซี สัญชาติอเมริกันปี 2020 กำกับโดย Stephen Gaghanจากบทภาพยนตร์โดย 
+            Gaghan, Dan Gregor และ Doug Mand โดยอิงจากเรื่องราวของ Thomas Shepherd 
+            Dolittleอิงจากตัวละครชื่อเรื่องที่สร้างโดย Hugh Lofting </p>
+          <p><strong>หมวดหมู่หนัง:</strong> ภาพยนตร์ผจญภัยแฟนตาซี</p>
+          <div class="links">
+            <a href="https://www.hotstar.com/th/onboarding?gclid=Cj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB&utm_campaign=MK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na&utm_medium=search&utm_source=google&ref=%2Fth%3Futm_source%3Dgoogle%26utm_medium%3Dsearch%26utm_campaign%3DMK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na%26gad_source%3D1%26gclid%3DCj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB" target="_blank">รับชมได้ที่ Disney plus</a>
+            <a href="https://en.wikipedia.org/wiki/Dolittle_(film)" target="_blank">รายละเอียด</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/th/0/0d/Avengers_Endgame_poster.jpg" alt="Project One">
+        <div class="card-content">
+          <h3>Avengers Endgame</h3>
+          <p>อเวนเจอร์ส: เผด็จศึก (อังกฤษ: Avengers: Endgame) เป็นภาพยนตร์อเมริกันแนวซูเปอร์ฮีโรฉายเมื่อ ค.ศ. 2019 
+            สร้างจากทีมซูเปอร์ฮีโร อเวนเจอร์ส ของ มาร์เวลคอมิกส์ ภาพยนตร์สร้างโดย มาร์เวลสตูดิโอส์ และจัดจำหน่ายโดย 
+            วอลต์ดิสนีย์สตูดิโอส์โมชันพิกเชอส์ เผด็จศึก เป็นภาพยนตร์ภาคต่อโดยตรงของ อเวนเจอร์ส: มหาสงครามล้างจักรวาล (2018)</p>
+          <p><strong>หมวดหมู่หนัง:</strong> ภาพยนตร์อเมริกันแนวซูเปอร์ฮีโร</p>
+          <div class="links">
+            <a href="https://www.hotstar.com/th/onboarding?gclid=Cj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB&utm_campaign=MK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na&utm_medium=search&utm_source=google&ref=%2Fth%3Futm_source%3Dgoogle%26utm_medium%3Dsearch%26utm_campaign%3DMK-TH_CN-AOPerformance_LG-EN_PB-Google_DT-CROSS_FM-SEA_SZ-NONE_ST-PRO_PD-NA_AO-Disney_Plus_Exact_FF-na%26gad_source%3D1%26gclid%3DCj0KCQiA19e8BhCVARIsALpFMgFOdL8TYabDzk57GH7Wv2kfwI-AZdnNghLyMTPX6qsFIRXSLhsbiYkaAnT_EALw_wcB" target="_blank">รับชมได้ที่ Disney plus</a>
+            <a href="https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%99%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA:_%E0%B9%80%E0%B8%9C%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%A8%E0%B8%B6%E0%B8%81#:~:text=%E0%B8%AD%E0%B9%80%E0%B8%A7%E0%B8%99%E0%B9%80%E0%B8%88%E0%B8%AD%E0%B8%A3%E0%B9%8C%E0%B8%AA%3A%20%E0%B9%80%E0%B8%9C%E0%B8%94%E0%B9%87%E0%B8%88%E0%B8%A8%E0%B8%B6%E0%B8%81%20(%E0%B8%AD%E0%B8%B1%E0%B8%87%E0%B8%81%E0%B8%A4%E0%B8%A9%3A%20Avengers%3A,%E0%B8%A1%E0%B8%AB%E0%B8%B2%E0%B8%AA%E0%B8%87%E0%B8%84%E0%B8%A3%E0%B8%B2%E0%B8%A1%E0%B8%A5%E0%B9%89%E0%B8%B2%E0%B8%87%E0%B8%88%E0%B8%B1%E0%B8%81%E0%B8%A3%E0%B8%A7%E0%B8%B2%E0%B8%A5%20(2018)" target="_blank">รายละเอียด</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>
