@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Section & Footer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-900">
+    
+  <!-- Contact Section -->
+  <section id="contact" class="p-8 bg-white shadow-md rounded-lg max-w-4xl mx-auto mt-10">
+    <h2 class="text-3xl font-bold text-center mb-6">Contact Us</h2>
+    <form id="contactForm" class="space-y-4">
+      <!-- Name Field -->
+      <div>
+        <label for="name" class="block text-lg font-medium">Name</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" class="border border-gray-300 p-2 w-full rounded-md" required>
+      </div>
+      <!-- Email Field -->
+      <div>
+        <label for="email" class="block text-lg font-medium">Email</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" class="border border-gray-300 p-2 w-full rounded-md" required>
+      </div>
+      <!-- Message Field -->
+      <div>
+        <label for="message" class="block text-lg font-medium">Message</label>
+        <textarea id="message" name="message" placeholder="Your Message" class="border border-gray-300 p-2 w-full rounded-md h-24" required></textarea>
+      </div>
+      <!-- Submit Button -->
+      <button type="submit" class="w-full bg-blue-600 text-white p-3 rounded-md font-medium hover:bg-blue-700">Send Message</button>
+    </form>
+  </section>
+
+  <!-- JavaScript -->
+  <script>
+    const form = document.getElementById('contactForm');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+
+      alert('Message sent successfully!');
+      form.reset();
+    });
+  </script>
+</body>
+</html>
